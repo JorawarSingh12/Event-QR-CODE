@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="qrcode.js">
+        </script>
+    </head>
+    <body>
+
+<h1>Username:</h1>
+<h2><%=username %></h2>
+<h1>Email:</h1>
+<h2><%=email %></h2>
+<a href="http://localhost:3000/check/<%=email%>">
+<div id="qrcode" ></div>
+</a>
+<script type="text/javascript">
+var url="http://localhost:3000/check";
+var qrcode = new QRCode("qrcode", {
+    text: url,
+    width: 128,
+    height: 128,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+</script>
+
+</body>
+
+</html>
