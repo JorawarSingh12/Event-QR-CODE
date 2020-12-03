@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="qrcode.js">
+        </script>
+    </head>
+    <body>
+
+
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+</form>
+<h2>Hi,<%=  name %></h2>
+<h3>You have successfully registered for the event. </h3>
+<img src=<%=v%> alt="QR Code" title="QR CODE" />
+
+<div>Take Screenshot of this page or go check your mail -> <%=email%></div>
+
+</body>
+</html>
