@@ -1,20 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="qrcode.js">
-        </script>
+        <title>Welcome</title>
+        <link rel="stylesheet" type="text/css" href="/css/generate.css">
+        
     </head>
     <body>
-
+<style>
+    *{
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    margin:0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:17px;
+    color:#926239;
+    line-height:1.6;
+  }
+  
+  #showcase{
+    background-image:url('http://traversymedia.com/downloads/assets/beachshowcase.jpg');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10px;
+  }
+  
+  #showcase h1{
+    font-size:50px;
+    line-height:1.2;
+  }
+  
+  #showcase p{
+    font-size:20px;
+  }
+  
+ 
+  #logout{
+      position: absolute;
+      right: 20px;
+      top: 40px;
+      width: 100px;
+      height: 40px;
+      font-family: cursive;
+  }
+  
+</style>
 
 <form action="/logout?_method=DELETE" method="POST">
-    <button type="submit">Log Out</button>
+    <button id="logout" type="submit">Log Out</button>
 </form>
-<h2>Hi,<%=  name %></h2>
-<h3>You have successfully registered for the event. </h3>
-<img src=<%=v%> alt="QR Code" title="QR CODE" />
 
-<div>Take Screenshot of this page or go check your mail -> <%=email%></div>
+
+
+<header id="showcase">
+    <h3>Hi,<%=  name %></h3>
+<h3>You have successfully registered for the event. </h3>
+    <p>Take Screenshot of this page or go check your mail -> <%=email%></p>
+</header>
+  <img src=<%=v%> alt="QR Code" title="QR CODE" />
 
 </body>
 </html>
+
