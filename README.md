@@ -1,5 +1,5 @@
 # Event-QR-CODE
-The wesite is live at : https://radiant-hamlet-73755.herokuapp.com/
+The website is live at : https://radiant-hamlet-73755.herokuapp.com/
 ## Register Page
 ![](images/1.png)
 ## Login Page
@@ -26,3 +26,6 @@ Goals for next commit:
 * Information related to place of event or link(if it is web only) on the homepage.
 * Disable Registeration based after a fixed number of registeration.
 * Changes related to cookies to permit single user for session( Issue - delete session of logout user).
+
+Credits:
+* for help in Login Register UI: True Coder Youtube Channel.
