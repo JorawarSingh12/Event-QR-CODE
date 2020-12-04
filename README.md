@@ -1,13 +1,13 @@
 # Event-QR-CODE
 
 ## Register Page
-
+![](images/1.png)
 ## Login Page
-
+![](images/2.png)
 ## User Home Page
-
+![](images/3.png)
 ## Email Sent:
-
+![](images/4.jpeg )
 This node application is built with the view to simplify and robust the process of event registeration.
 
 THe steps to register for the event are:
