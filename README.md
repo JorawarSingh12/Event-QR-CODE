@@ -1,5 +1,5 @@
 # Event-QR-CODE
-
+The wesite is live at : https://radiant-hamlet-73755.herokuapp.com/
 ## Register Page
 ![](images/1.png)
 ## Login Page
